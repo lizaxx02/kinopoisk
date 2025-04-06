@@ -1,0 +1,359 @@
+<!-- a. СМОТРИ template.png
+b. Классы НАЗЫВАЕМ по смыслу.
+
+ЗАДАНИЕ 1. Создай класс links для ссылок в шапке.
+	а. Создай класс links.
+	b. Вырежи свойства из атрибута style и добавь их классу links.
+	c. Добавь атрибут class со значением "links" ссылкам.
+
+ЗАДАНИЕ 6. Создай класс button для всех кнопок в коде.
+	а. Создай класс button.
+	b. Вырежи свойства из атрибута style и добавь их классу button.
+	c. Добавь атрибут class со значением "button" тегам кнопки.
+
+ЗАДАНИЕ 7. Создай класс movie_image для всех картинок в коде.
+	а. Создай класс movie_image.
+	b. Вырежи свойства из атрибута style и добавь их классу movie_image.
+	c. Добавь атрибут class со значением "movie_image" img внутри дивов фильмов.
+-->
+
+<style>
+
+    /* главный блок */
+    .main {
+        background: black;
+        width: 1920px; 
+        height: 3000px; 
+        background: #1f1f1f; 
+        margin-left: auto; 
+        margin-right: auto; 
+        font-family: 'Comic Sans MS';
+    }
+
+    /* навигация */
+    .navigation {
+        width: 1920px; 
+        height: 100px; 
+        margin-left: auto; 
+        margin-right: auto;
+        display: flex;
+    }
+
+    .logo_container {
+        width: 300px; 
+        height: 100px; 
+        margin-right: 310px;
+    }
+
+    .logo {
+        margin-top: 32px; 
+        margin-left: 90px;
+    }
+
+    .link_container {
+        width: 700px; 
+        height: 66px; 
+        padding-top: 34px; 
+        margin-right: 260px; 
+        text-align: center; 
+    }
+
+    .actions_container {
+        width: 350px; 
+        height: 100px; 
+        display: flex;
+    }
+
+    .install_tv_container {
+        width: 280px; 
+        height: 66px; 
+        padding-top: 34px; 
+        margin-right: 20px;
+    }
+
+    .profile_container {
+        width: 50px; 
+        height: 50px; 
+        margin-top: 25px;
+    }
+
+    .profile {
+        width: 50px;
+    }
+
+    /* баннер */
+    .banner {
+        width: 1920px; 
+        height: 550px; 
+        margin-left: auto; 
+        margin-right: auto;  
+        background: url('bg.png');
+    }
+
+    .banner_text_container {
+        width: 1000px; 
+        height: 150px; 
+        padding-top: 150px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        text-align: center;
+    }
+
+    .banner_header {
+        margin: 0; 
+        color: #F7F7F7; 
+        font-size: 48px;
+    }
+
+    .banner_text {
+        font-size: 24px; 
+        color: #fff;
+    }
+
+    /* скелет блока фильмов */
+
+    .skeleton {
+        width: 1600px; 
+        height: 1700px; 
+        margin-left: auto; 
+        margin-right: auto; 
+        text-align: center;
+    }
+
+    /* КЛАССЫ СОЗДАЕМ ЗДЕСЬ */
+     
+   .button   
+      {
+      padding-top: 10px; padding-bottom: 10px; padding-left: 60px; padding-right: 60px;
+       background: red; border: none; font-size: 12px
+
+ 
+   }
+   .movie_image
+   {
+   width: 270px; height: 270px;
+
+   }
+    .links 
+    {
+      color: white; font-size: 24px; margin-right: 35px;  
+      text-decoration: none ;
+    }
+     .text:hover{
+        color: black;
+      }
+    .block 
+    {
+       width: 500px;
+       height: 380px;
+       background-color:black;
+       transition: background 1s linear,color 1s linear,width 1s linear,height 1s linear;
+       margin-left:60px ;
+
+        }
+        .block:hover{
+            background:red;
+        }
+
+      
+ 
+    .displayflex{ 
+        display: flex;}
+    .boks{
+       width:500px ;
+       height:380px ;
+       background-color: black ;
+       margin-left:60px ;
+       border-radius:15px ;
+  
+    }
+     .text {
+        color:white;
+        font-size:40px ;
+     }
+      .text2{
+        color:black;
+        width:300px ;
+      }
+       
+       .cartin{
+          width: 200px;
+          height: 180px;
+          background:green ;
+          margin-right:20px ;
+          border-radius: 10px;
+       }
+
+</style>
+ 
+<!-- 1 уровень -->   
+<div class="main">
+	<!-- 2 уровень -->
+	<!-- ШАПКА -->
+    <div class="navigation">
+        <div class="logo_container">
+            <img src="logo.svg" class="logo"/>
+        </div>
+        <div class="link_container">
+            <a href="#" class="links ">Мое кино</a>
+            <a href="#" class="links">Магазин</a>
+            <a href="#" class="links">Буду смотреть</a>
+            <a href="#" class="links">Покупки</a>
+        </div>
+        <div class="actions_container">
+            <div class="install_tv_container">
+                <a href="#" class="links" >
+                    Установить на ТВ    
+                </a>
+            </div>
+            <div class="profile_container">
+                <img src="profile.png" class="profile"/>
+            </div>
+        </div>
+    </div>
+    <!-- БАННЕР -->
+    <div class="banner">
+        <div class="banner_text_container">
+            <h1 class="banner_header">Миллиарды</h1>
+            <p class="banner_text">Миллиардер против прокурора — большие люди, большие деньги, большие проблемы. Для фанатов «Карточного домика»</p>
+        </div>
+    </div>
+    <div class="skeleton">
+        <h2 style="color: #C8C8C8; font-size: 30px;">Новинки</h2>
+        <!-- див строка -->
+        <div style="width: 1600px; height: 310px; margin-bottom: 40px;  display: flex;">
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film1.png">
+                <button class="button"  > </button>   
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film2.png">
+                <button class="button" >смотреть </button>  
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film3.png">
+                <button class="button">Смотреть</button>    
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film4.png">film1.png
+                <button class="button">Смотреть</button>  
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+        </div>
+        <h2 style="color: #C8C8C8; font-size: 30px;">Популярные</h2>
+		<!-- див строка -->
+        <div style="width: 1600px; height: 310px; margin-bottom: 40px; ; display: flex;">
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film1.png">
+                <button class="button">Смотреть</button>   
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film2.png">
+                <button class="button">Смотреть</button>  
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film3.png">
+                <button class="button">Смотреть</button>    
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film4.png">
+                <button class="button">Смотреть</button>  
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+        </div>
+        <h2 style="color: #C8C8C8; font-size: 30px;">Выбираем сегодня</h2>
+		<!-- див строка -->
+        <div style="width: 1600px; height: 310px; margin-bottom: 40px; ; display: flex;">
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film1.png">
+                <button class="button">Смотреть</button>   
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film2.png">
+                <button class="button">Смотреть</button>  
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film3.png">
+                <button class="button">Смотреть</button>    
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film4.png">
+                <button class="button">Смотреть</button>  
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+        </div>
+        <h2 style="color: #C8C8C8; font-size: 30px;">В тренде: приключения</h2>
+		<!-- див строка -->
+        <div style="width: 1600px; height: 310px; margin-bottom: 40px; ; display: flex;">
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film1.png">
+                <button class="button">Смотреть</button>   
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film2.png">
+                <button class="button">Смотреть</button>  
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film3.png">
+                <button class="button">Смотреть</button>    
+                <div style=" color: #E2C61A;">от 599 ₽</div>
+            </div>
+            <!-- див фильма -->
+            <div style="width: 345px; height: 310px; margin-right: 30px; ;">
+                <img class="movie_image" src="film4.png">
+                <button class="button">Смотреть</button>  
+                <div style=" color: #E2C61A;">от 599 ₽</div> 
+            </div>
+        </div>
+       
+    </div> <div class="displayflex"> 
+         <div class="block" > 
+            <p class="text"> 25 октября на кинопоиске </p>
+            <div class="displayflex">
+                <p class="text2">продолжение уникальной истории народа На'Ви</p>
+                <img src="avatar.jpg" class="cartin">
+            </div>
+         </div>
+         <div class="block"> 
+           <p class="text"> 25 октября на кинопоиске </p>
+             <div class="displayflex">
+                 <p class="text2"> фильм продолжает историю избранного по имени НЕО</p>
+                <img src="matrix.jpg" class="cartin">
+             </div>
+
+         </div>
+         <div class="block">
+            <p class="text"> 25 октября на кинопоиске </p>
+            <div class="displayflex"> 
+               <p class="text2"> продолжение истории о питере паркере и его подружке эмджей</p>
+               <img src="spider.jpg" class="cartin">
+            </div>
+         </div>
+        </div>
+</div>
